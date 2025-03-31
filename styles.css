@@ -1,0 +1,119 @@
+/* Загальні стилі для BODY */
+body {
+    background-color: #f5f5dc;
+    /* Бежевий фон */
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для заголовків */
+.heading {
+    font-size: 2em;
+    color: #2e8b57;
+    /* морська зелень */
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Унікальний заголовок (наприклад, головний) */
+#main-heading {
+    font-size: 2.5em;
+    color: #8b0000;
+    /* темно-червоний */
+    font-weight: bold;
+}
+
+/* Стилізація посилань рівня документу */
+a {
+    color: blue !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Селектор для посилань при наведенні */
+a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+/* Стилі для списків */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+dl {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Стилі для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #999;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #add8e6;
+    /* світло-блакитний фон для шапки */
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Додаткове групування колонок для складної таблиці */
+colgroup col:nth-child(1) {
+    background-color: #f0e68c;
+}
+
+colgroup col:nth-child(2) {
+    background-color: #f0e68c;
+}
+
+colgroup col:nth-child(3) {
+    background-color: #ffe4e1;
+}
+
+/* Внутрішній стиль для окремого абзацу (приклад inline, який можна також оголосити тут через id) */
+#special-paragraph {
+    font-size: 18px;
+    color: purple;
+    font-style: italic;
+    text-align: left;
+}
