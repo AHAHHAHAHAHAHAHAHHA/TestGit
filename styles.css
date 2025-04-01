@@ -110,10 +110,61 @@ colgroup col:nth-child(3) {
     background-color: #ffe4e1;
 }
 
-/* Внутрішній стиль для окремого абзацу (приклад inline, який можна також оголосити тут через id) */
+/* Внутрішній стиль для окремого абзацу (приклад inline, який можна також оголосити через id) */
 #special-paragraph {
     font-size: 18px;
     color: purple;
     font-style: italic;
     text-align: left;
+}
+
+/* ===== Додаткові селектори ===== */
+
+/* Контекстний селектор: стилізація всіх абзаців всередині контейнера з класом .content */
+.content p {
+    font-family: "Verdana", sans-serif;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Дочірній селектор: стилізація безпосередніх <li> всередині навігаційного меню */
+nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Сусідній селектор: стилізація абзацу, який йде відразу після заголовка <h1> */
+h1+p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Сусідній селектор: стилізація всіх заголовків <h2>, які слідують за <h1> */
+h1~h2 {
+    color: darkred;
+    margin-top: 20px;
+}
+
+/* Контекстний селектор: стилізація посилань, що знаходяться всередині навігації */
+nav ul li a {
+    font-size: 1.1em;
+    color: blue;
+}
+
+/* Дочірній селектор для таблиці: стилізація першого рядка в <tbody> (наприклад, для виділення заголовка групи даних) */
+table>tbody>tr:first-child {
+    background-color: #e0ffff;
+}
+
+/* Сусідній селектор: стилізація абзацу, який йде відразу після заголовка <h2> */
+h2+p {
+    color: darkblue;
+    font-style: italic;
 }
